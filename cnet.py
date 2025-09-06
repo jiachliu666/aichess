@@ -25,6 +25,7 @@ class ChessNet(nn.Module):
             nn.Linear(128, 1),
             nn.Tanh(),
         )
+        
 
     def forward(self, x):
         x = F.relu(self.conv1(x))
